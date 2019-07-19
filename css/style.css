@@ -1,0 +1,74 @@
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;    
+}
+
+#sidenav {
+    position: fixed;
+    font-size: 12px;
+    display: block;
+    height: 100%;
+    width: 160px;    
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+@media (min-width: 550px) { /*Skeletons default grid-activation width*/
+    #sidenav{
+        position: relative;
+    }
+}
+  
+#sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+#sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#home{
+    padding-top: 50px;
+}
+#home a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;        
+}
+
+#content {
+    padding-top: 20px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+#portfolio_page {
+    display: none;
+}
+
+#cv_page {
+    display: none;
+    font-size: 12px;
+}
+#cv_page table {
+}
+#cv_page table th{
+    padding: 5px 5px;
+    font-size: 14px;
+}
+#cv_page table td{
+    padding: 5px 5px;
+}
+
+
+#contact_page {
+    display: none;
+}
