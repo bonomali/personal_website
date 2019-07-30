@@ -7,10 +7,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Mobile Specific Metas–––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- FONT––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <!-- CSS–––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,45 +20,57 @@
   <script src="js/jquery-3.4.1.slim.min.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Favicon––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="img/favicons/manifest.json">
+  <!-- Favicon–––––––––––––––––––––––––––––––––––––-->
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="./img/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
 </head>
 <body class="container">
     <div class="row">
         <div class="five columns" id="home">
-            <a href="#about">Somang Nam</a>
+            <a href="#" id="home">Somang Nam</a>
         </div>
     </div>
     <div class="row">
-        <section class="three columns">            
+        <!-- Navbar -->
+        <section class="three columns">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-hamburger"></i>
+                <div>menu</div>
+            </span>
             <nav id="sidenav">
-                <a id="about" href="#about">About</a>
-                <a id="cv" href="#cv">CV</a>
-                <a id="portfolio" href="#portfolio">Portfolio</a>
-                <a id="contact" href="#contact">Contact</a>              
+                <!--<a href="#" class="logo">logo</a>-->
+                <ul class="main-nav" id="js-menu">
+                    <li><a href="#" class="nav-links" id="about">About</a></li>
+                    <li><a href="#" class="nav-links" id="cv">Curriculum Vitae</a></li>
+                    <li><a href="#" class="nav-links" id="portfolio">Portfolio</a></li>
+                    <li><a href="#" class="nav-links" id="contact">Contact</a></li>
+                    <!--<li><a href="blog" class="nav-links" id="blog">Blog</a></li>-->
+                </ul>
             </nav>
             &nbsp;
         </section>
 
         <div class="nine columns" id="about_page">
             <section class="five columns post" id="content1">
+                <p>
+                Welcome to my website <i class="far fa-laugh"></i>
+                </p>
                 <p>
                 I am a Ph.D. student in Industrial Engineering, University of Toronto. I am also a member of the Inclusive Media & Design Centre (IMDC), Ryerson University.
                 I am interested in Accessibile Computing, Human-Computer Interaction, and Data Science (and Machine Learning).
@@ -66,7 +80,7 @@
                 </p>
             </section>
             <section class="four columns post" id="content2">
-                <img class="responsive" src="img/mypics/582.jpg" alt="Profile picture of Somang Nam.">
+                <img class="responsive" src="./img/mypics/582.JPG" alt="Profile picture of Somang Nam.">
                 <p>Me at the Art Gallery of Ontario, Toronto, Canada</p>
             </section>
         </div>
@@ -165,11 +179,13 @@
         </div>
         
         <div class="nine columns" id="portfolio_page">
-            Portfolio placeholder
+            work-in-progress
         </div>
 
         <div class="nine columns" id="contact_page">
-            Contact placeholder
+            <p>my <i class="fas fa-inbox"></i> is</p>
+            <p>somang <i class="fas fa-at"></i> mie.utoronto.ca</p>
+            
         </div>
     
     </div>

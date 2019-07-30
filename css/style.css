@@ -13,24 +13,65 @@
     overflow-x: hidden;
     padding-top: 20px;
 }
-@media (min-width: 550px) { /*Skeletons default grid-activation width*/
-    #sidenav{
-        position: relative;
-    }
-}
-  
-#sidenav a {
-    padding: 6px 8px 6px 16px;
+.main-nav li a {
     text-decoration: none;
     font-size: 15px;
     color: #818181;
     display: block;
 }
-
 #sidenav a:hover {
-    color: #f1f1f1;
+    color: #FF4500;
+}
+#sidenav a:active {
+    color: #FF4500;
+}
+.main-nav {
+    list-style-type: none;
+    display: block;
+}
+.nav-links, .logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.logo {
+    display: inline-block;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    font-size: 24px;
+    text-align: center;
+    
+    display: none;
+}
+.navbar-toggle div{
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
 }
 
+@media screen and (max-width: 550px) { /*Skeletons default grid-activation width*/
+    #sidenav{
+        position: relative;
+    }
+    .navbar-toggle{
+        display: block;
+    }
+    .main-nav {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    
+}
+
+/* */
 #home{
     padding-top: 50px;
 }
@@ -41,24 +82,21 @@
     color: #818181;        
 }
 
+/* */
 #content {
     padding-top: 20px;
 }
 
 .responsive {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
-#portfolio_page {
-    display: none;
-}
 
+/* */
 #cv_page {
     display: none;
     font-size: 12px;
-}
-#cv_page table {
 }
 #cv_page table th{
     padding: 5px 5px;
@@ -68,7 +106,18 @@
     padding: 5px 5px;
 }
 
+/* */
+#portfolio_page {
+    display: none;
+}
 
+
+/* */
 #contact_page {
     display: none;
 }
+
+
+
+
+
