@@ -1,49 +1,49 @@
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
     //$("#about").css('color', "#FF4500");
 
 
     // Add actionlistners for each navigation items
-    $("#home").click(function(){
+    jQuery("#home").click(function(){
         console.log("home");
-        $("#about_page").show();
-        $("#cv_page").hide();
-        $("#portfolio_page").hide();
-        $("#contact_page").hide();        
+        jQuery("#about_page").show();
+        jQuery("#cv_page").hide();
+        jQuery("#portfolio_page").hide();
+        jQuery("#contact_page").hide();        
     });
 
-    $("#about").click(function(){
+    jQuery("#about").click(function(){
         console.log("about");
-        $("#about_page").show();
-        $("#cv_page").hide();
-        $("#portfolio_page").hide();
-        $("#contact_page").hide();        
+        jQuery("#about_page").show();
+        jQuery("#cv_page").hide();
+        jQuery("#portfolio_page").hide();
+        jQuery("#contact_page").hide();        
     });
 
-    $("#cv").click(function(){
+    jQuery("#cv").click(function(){
         console.log("cv");
-        $("#about_page").hide();
-        $("#cv_page").show();
-        $("#portfolio_page").hide();
-        $("#contact_page").hide();
+        jQuery("#about_page").hide();
+        jQuery("#cv_page").show();
+        jQuery("#portfolio_page").hide();
+        jQuery("#contact_page").hide();
     });
 
-    $("#portfolio").click(function(){
+    jQuery("#portfolio").click(function(){
         console.log("portfolio");
-        $("#about_page").hide();
-        $("#cv_page").hide();
-        $("#portfolio_page").show();
-        $("#contact_page").hide();
+        jQuery("#about_page").hide();
+        jQuery("#cv_page").hide();
+        jQuery("#portfolio_page").show();
+        jQuery("#contact_page").hide();
     });
 
-    $("#contact").click(function(){
+    jQuery("#contact").click(function(){
         console.log("contact");
-        $("#about_page").hide();
-        $("#cv_page").hide();
-        $("#portfolio_page").hide();
-        $("#contact_page").show();
+        jQueryQuery("#about_page").hide();
+        jQuery("#cv_page").hide();
+        jQuery("#portfolio_page").hide();
+        jQuery("#contact_page").show();
     });
 
-    $("#js-navbar-toggle").click(function(){
-        $(".main-nav").toggleClass('active');
+    jQuery("#js-navbar-toggle").click(function(){
+        jQuery(".main-nav").toggleClass('active');
     });
 });
