@@ -1,49 +1,54 @@
-jQuery( document ).ready(function() {
-    //$("#about").css('color', "#FF4500");
-
+document.addEventListener("DOMContentLoaded", function(){
 
     // Add actionlistners for each navigation items
-    jQuery("#home").click(function(){
+    document.getElementById("home").onclick = function(){
         console.log("home");
-        jQuery("#about_page").show();
-        jQuery("#cv_page").hide();
-        jQuery("#portfolio_page").hide();
-        jQuery("#contact_page").hide();        
-    });
+        document.getElementById("about_page").style.display = "block";
+        document.getElementById("cv_page").style.display = "none";
+        document.getElementById("portfolio_page").style.display = "none";
+        document.getElementById("contact_page").style.display = "none";
+    };
 
-    jQuery("#about").click(function(){
+    document.getElementById("about").onclick = function(){
         console.log("about");
-        jQuery("#about_page").show();
-        jQuery("#cv_page").hide();
-        jQuery("#portfolio_page").hide();
-        jQuery("#contact_page").hide();        
-    });
+        document.getElementById("about_page").style.display = "block";
+        document.getElementById("cv_page").style.display = "none";
+        document.getElementById("portfolio_page").style.display = "none";
+        document.getElementById("contact_page").style.display = "none";
+    };
 
-    jQuery("#cv").click(function(){
+    document.getElementById("cv").onclick = function(){
         console.log("cv");
-        jQuery("#about_page").hide();
-        jQuery("#cv_page").show();
-        jQuery("#portfolio_page").hide();
-        jQuery("#contact_page").hide();
-    });
+        document.getElementById("about_page").style.display = "none";
+        document.getElementById("cv_page").style.display = "block";
+        document.getElementById("portfolio_page").style.display = "none";
+        document.getElementById("contact_page").style.display = "none";
+    };
 
-    jQuery("#portfolio").click(function(){
+    document.getElementById("portfolio").onclick = function(){
         console.log("portfolio");
-        jQuery("#about_page").hide();
-        jQuery("#cv_page").hide();
-        jQuery("#portfolio_page").show();
-        jQuery("#contact_page").hide();
-    });
+        document.getElementById("about_page").style.display = "none";
+        document.getElementById("cv_page").style.display = "none";
+        document.getElementById("portfolio_page").style.display = "block";
+        document.getElementById("contact_page").style.display = "none";
+    };
 
-    jQuery("#contact").click(function(){
+    document.getElementById("contact").onclick = function(){
         console.log("contact");
-        jQueryQuery("#about_page").hide();
-        jQuery("#cv_page").hide();
-        jQuery("#portfolio_page").hide();
-        jQuery("#contact_page").show();
-    });
-
-    jQuery("#js-navbar-toggle").click(function(){
-        jQuery(".main-nav").toggleClass('active');
-    });
+        document.getElementById("about_page").style.display = "none";
+        document.getElementById("cv_page").style.display = "none";
+        document.getElementById("portfolio_page").style.display = "none";
+        document.getElementById("contact_page").style.display = "block";
+    };
+     
 });
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+}

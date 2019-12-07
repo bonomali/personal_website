@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Scripts–––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Favicon–––––––––––––––––––––––––––––––––––––-->
@@ -49,21 +48,19 @@
     <div class="row">
         <!-- Navbar -->
         <section class="three columns">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-hamburger"></i>
-                <div>menu</div>
-            </span>
-            <nav id="sidenav">
-                <!--<a href="#" class="logo">logo</a>-->
-                <ul class="main-nav" id="js-menu">
-                    <li><a href="#" class="nav-links" id="about">About</a></li>
-                    <li><a href="#" class="nav-links" id="cv">Curriculum Vitae</a></li>
-                    <li><a href="#" class="nav-links" id="portfolio">Portfolio</a></li>
-                    <li><a href="#" class="nav-links" id="contact">Contact</a></li>
-                    <!--<li><a href="blog" class="nav-links" id="blog">Blog</a></li>-->
-                </ul>
-            </nav>
             &nbsp;
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#" id="about">About</a></li>
+                <li><a href="#" id="cv">Curriculum Vitae</a></li>
+                <li><a href="#" id="portfolio">Portfolio</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <!--<i class="fas fa-hamburger"></i>-->
+                        <img id='menuicon' src="./img/hamburger.png">
+                    </a>
+                </li>
+            </ul>
         </section>
 
         <div class="nine columns" id="about_page">
